@@ -12,7 +12,9 @@ function search() {
   });
 
   request.execute(function(response) {
-    var str = JSON.stringify(response.result);
-    $('#search-container').html('<pre>' + str + '</pre>');
+    var str = JSON.stringify(response.result).index(0);
+    var id = str[id][videoid]
+    $('#search-container').html(
+      '<iframe width="560" height="315" src=https://www.youtube.com/embed/' + id + 'frameborder="0" allowfullscreen></iframe>')
   });
 }
