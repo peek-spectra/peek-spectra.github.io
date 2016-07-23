@@ -78,8 +78,8 @@ hr {
 }
 
 .box {
-    margin-bottom: 20px;
-    padding: 30px 15px;
+    margin-bottom: 5px;
+    /*padding: 30px 15px;*/
     background: #fff;
     background: rgba(255,255,255,0.9);
 }
@@ -123,7 +123,6 @@ footer p {
         font-size: 5em;
         font-weight: 700;
         line-height: normal;
-        /*color: #fff;*/
         color:black;
     }
 
