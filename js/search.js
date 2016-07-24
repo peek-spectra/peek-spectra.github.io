@@ -15,9 +15,11 @@ function search() {
   request.execute(function(response) {
     var str = JSON.stringify(response.result); 
     var id = response.result['items'][0]['id']['videoId'] 
-    var src = 'https://www.youtube.com/embed/' + id
+    var htmlstr = '<div class="row"><div class="box"><div class="col-lg-12">'
+    var htmlstr1 = '<hr class="visible-xs"></div></div></div>'
+    var src = 'https://www.youtube.com/embed/' + id + '?autoplay=1'
      $('#search-container').html(
-            '<iframe width="560" height="315" src="' + src + '" frameborder="0" allowfullscreen></iframe>')
+            htmlstr + '<iframe width="560" height="315" src="' + src + '" frameborder="0" allowfullscreen></iframe>' + htmlstr1)
     var id1 = response.result['items'][1]['id']['videoId'] 
     var src1 = 'https://www.youtube.com/embed/' + id1
      $('#search-container1').html(
