@@ -36,6 +36,7 @@ hr {
     border-color: #999999;
 }
 
+
 .brand,
 .address-bar {
     display: none;
@@ -90,7 +91,13 @@ hr {
     font-weight: 400;
     letter-spacing: 1px;
 }
-
+.inline-text {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  color: #999999 solid;
+  line-height: 10em;
+  text-align: left;
+}
 .img-border {
     float: none;
     margin: 0 auto 0;
